@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+
+<body>
+    <form>
+        <h2>
+            Agendamento de Lavagem
+        </h2>
+
+        <form action="">
+
+            <div class="input">
+                <label>Nome</label>
+                <input type="text" id="nome" name="nome" required autocomplete="off">
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <label>Contacto</label>
+                <input type="tel" id="contacto" name="contacto" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required autocomplete="off">
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <label>NIF</label>
+                <input type="number" id="nif" name="nif" placeholder="Caso nessecite de factura" autocomplete="off">
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <label>E-mail:</label>
+                <input type="email" id="Email" name="Email" required autocomplete="off">
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <label>Agenda</label>
+                <input type="date" id="datalavagem" name="datalavagem" min="datetime-local" max="2021-10-09" required>
+                <span class="error"></span>
+            </div>
+
+            <div class="options">
+                <label for="horario"><strong>Escolha o seu horario:</strong></label><br>
+                <input type="radio" id="horario" name="horario" required>8h30
+                <input type="radio" id="horario" name="horario" required>9h30
+                <input type="radio" id="horario" name="horario" required>10h30 <br>
+                <input type="radio" id="horario" name="horario" required>11h30
+                <input type="radio" id="horario" name="horario" required>12h30
+                <input type="radio" id="horario" name="horario" required>13h30 <br>
+                <input type="radio" id="horario" name="horario" required>14h30
+                <input type="radio" id="horario" name="horario" required>15h30
+                <input type="radio" id="horario" name="horario" required>16h30 <br>
+                <input type="radio" id="horario" name="horario" required> Outro</label>
+                <input type="time" id="outro" name="outro" placeholder="Indique outro horário"></label>
+
+            </div>
+
+
+            <div>
+                <input id="concluido" type="submit" name="acao" value="Enviar">
+            </div>
+        </form>
+
+        <script src="agendamento.js"></script>
+</body>
+
+</html>
