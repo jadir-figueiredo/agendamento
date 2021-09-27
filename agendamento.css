@@ -49,6 +49,9 @@ div.input {
     position: relative;
 }
 
+
+/* Como tirar a cor do autocomplete do Google Chrome*/
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

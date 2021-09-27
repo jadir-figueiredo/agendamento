@@ -28,8 +28,6 @@ function customValidation(event) {
 
 }
 
-
-
 for (field of fields) {
     field.addEventListener("invalid", customValidation)
 }
@@ -39,5 +37,5 @@ addEventListener("submit", event => {
     console.log("enviar o formulário")
 
     // não enviar o formulário 
-    event.preventDefault()
+    //event.preventDefault()
 })
